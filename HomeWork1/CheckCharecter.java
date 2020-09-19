@@ -2,30 +2,31 @@ import java.util.*;
 
 public class CheckCharecter {
     char theCharecter;
-    public static void main(String []args){
+
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the Charecter: ");
-        char charecter = scanner.next().charAt(0);;
-        
+        char charecter = scanner.next().charAt(0);
+
         CheckCharecter instance = new CheckCharecter(charecter);
         instance.printResult();
     }
-    
-    CheckCharecter(char ch){
+
+    CheckCharecter(char ch) {
         this.theCharecter = ch;
     }
-    
-    public void printResult(){
-        if( this.isVowelOrConsonant() ){
+
+    public void printResult() {
+        if (this.isVowelOrConsonant()) {
             System.out.println("The Charecter is Vowel!");
-        }else{
+        } else {
             System.out.println("The Charecter is Consonant!");
         }
     }
-    
-    public boolean isVowelOrConsonant(){
+
+    public boolean isVowelOrConsonant() {
         boolean result = false;
-        switch(theCharecter){
+        switch (theCharecter) {
             case 'a':
                 result = true;
                 break;
@@ -38,7 +39,7 @@ public class CheckCharecter {
             case 'o':
                 result = true;
                 break;
-            case 'u': 
+            case 'u':
                 result = true;
                 break;
             default:
@@ -46,5 +47,5 @@ public class CheckCharecter {
         }
         return result;
     }
-    
+
 }
