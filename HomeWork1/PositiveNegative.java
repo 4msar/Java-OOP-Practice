@@ -1,14 +1,15 @@
 import java.util.*;
 
 public class PositiveNegative {
-    public static void main(String []args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int number = scanner.nextInt();
-        if( number > 0 ){
+        if (number > 0) {
             System.out.print("The number is Positive!");
-        }else{
+        } else {
             System.out.print("The number is Negative!");
         }
+        scanner.close();
     }
 }

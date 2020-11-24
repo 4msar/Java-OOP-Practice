@@ -20,6 +20,7 @@ public class Calculator {
 
         Calculator instance = new Calculator();
         instance.calculate(action, first, second);
+        scanner.close();
     }
 
     public void calculate(char action, int first, int second) {

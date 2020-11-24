@@ -10,6 +10,7 @@ public class CheckCharecter {
 
         CheckCharecter instance = new CheckCharecter(charecter);
         instance.printResult();
+        scanner.close();
     }
 
     CheckCharecter(char ch) {

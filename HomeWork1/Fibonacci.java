@@ -14,6 +14,7 @@ public class Fibonacci {
         } else {
             instance.usingWhileLoop(number);
         }
+        scanner.close();
     }
 
     public void usingForLoop(int counter) {

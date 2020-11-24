@@ -15,6 +15,7 @@ public class Factorial {
         } else {
             instance.usingWhileLoop(number);
         }
+        scanner.close();
     }
 
     public void usingForLoop(int number) {
