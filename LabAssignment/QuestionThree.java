@@ -4,12 +4,11 @@
 
 public class QuestionThree {
     public static void main(String[] args) {
-        Reference ref1 = new Reference("Akash");
-        Reference ref2 = new Reference("Batash");
+        Reference ref = new Reference();
 
-        System.out.println("Before call by ref the name is: " + ref2.name);
-        ref1.setNameByReference(ref2);
-        System.out.println("After call by ref the name is: " + ref2.name);
+        System.out.println("Before call by ref the name is: " + ref.name);
+        ref.setNameByReference(ref);
+        System.out.println("After call by ref the name is: " + ref.name);
 
         // ref2.setNameByReference(ref1);
         // ref1.setNameByValue("Ashiq");
@@ -21,14 +20,10 @@ public class QuestionThree {
  * Reference
  */
 class Reference {
-    String name;
-
-    Reference(String name) {
-        this.name = name;
-    }
+    String name = "My Name Is Khan";
 
     void setNameByReference(Reference obj) {
-        obj.name = name;
+        obj.name = "I'm changed by the Reference!";
     }
 
     void setNameByValue(String name) {
