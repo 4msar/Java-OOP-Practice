@@ -16,3 +16,7 @@ class NewBook extends Book {
         this.name = bookName;
     }
 }
+
+// To run this do the action below.
+// javac -d ./ Question15.java
+// java Question15
